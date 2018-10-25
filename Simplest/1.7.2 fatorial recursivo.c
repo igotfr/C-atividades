@@ -15,10 +15,10 @@ para esquerda (ou seja, começando de n e indo até 1). Quais problemas você en
 
 int fatorialRecursivo(int n)
 {
-    if(n==0 || n==1)
-      return 1;
-    else
-      return n*fatorialRecursivo(n-1);
+  if(n==0 || n==1)
+    return 1;
+  else
+    return n*fatorialRecursivo(n-1);
 }
 
 int main()
