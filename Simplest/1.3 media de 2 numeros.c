@@ -10,7 +10,8 @@ Crie um algoritmo que calcule a média de 2 (dois) números e exibe a resposta p
 
 #include<stdio.h>
 
-// a variável n dentro das funções ler5numeros() e somar5numeros() não é a mesma qe está dentro da função main(); elas estão em escopos diferentes
+/* as variáveis n1 e n2 dentro da função mediade2numeros() não são as mesmas qe estão dentro da função main();
+elas estão em escopos diferentes  */
 
 float mediade2numeros(float n1, float n2)
 {
