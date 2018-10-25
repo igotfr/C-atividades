@@ -10,7 +10,8 @@ Faça um algoritmo que receba um número e mostre uma mensagem caso este seja ma
 
 #include<stdio.h>
 
-// a variável n dentro da função menorMaiorouIguala10() não é a mesma qe está dentro da função main(); elas estão em escopos diferentes
+/* a variável n dentro da função menorMaiorouIguala10() não é a mesma qe está dentro da função main();
+elas estão em escopos diferentes  */
 
 void menorMaiorouIguala10(float n)
 {
