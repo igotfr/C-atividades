@@ -10,7 +10,8 @@ Crie um algoritmo que leia dois valores inteiros distintos e informe qual é o m
 
 #include<stdio.h>
 
-// as variáveis n1 e n2 dentro da função maiorNumero() não são as mesma qe estão dentro da função main(); elas estão em escopos diferentes
+/* as variáveis n1 e n2 dentro da função maiorNumero() não são as mesma qe estão dentro da função main();
+elas estão em escopos diferentes  */
 
 void maiorNumero(float n1, float n2)
 {
