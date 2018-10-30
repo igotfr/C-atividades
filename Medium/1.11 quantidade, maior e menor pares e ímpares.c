@@ -122,7 +122,7 @@ int main()
   int conjuntoNumeros;
   struct ModeloAtributosNumericos receberAtributosNumericos;
 
-  printf("Digite vários números para verificação de paridade:\n");
+  printf("Digite vários números para verificação de paridade: (-2 para sair)\n");
 
   receberAtributosNumericos= selecaoAtributosNumericos(conjuntoNumeros);
   
@@ -134,7 +134,8 @@ int main()
           Ímpares: %i\n\
           Maior ímpar: %i\n\
           Menor ímpar: %i",
-          receberAtributosNumericos.qtdPares,  receberAtributosNumericos.maiorPar,
+          receberAtributosNumericos.qtdPares,
+          receberAtributosNumericos.maiorPar,
           receberAtributosNumericos.menorPar,
           receberAtributosNumericos.qtdImpares,
           receberAtributosNumericos.maiorImpar,
