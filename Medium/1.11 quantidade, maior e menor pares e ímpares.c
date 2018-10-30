@@ -120,7 +120,13 @@ struct ModeloAtributosNumericos selecaoAtributosNumericos(int numero)
 int main()
 {
   int conjuntoNumeros;
-  struct ModeloAtributosNumericos receberAtributosNumericos= selecaoAtributosNumericos(conjuntoNumeros);
+  struct ModeloAtributosNumericos receberAtributosNumericos;
+
+  printf("Digite vários números para verificação de paridade:\n");
+
+  receberAtributosNumericos= selecaoAtributosNumericos(conjuntoNumeros);
+  
+  printf("\n");
 
   printf("Pares: %i\n\
           Maior par: %i\n\
