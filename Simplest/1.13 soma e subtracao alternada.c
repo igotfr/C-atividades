@@ -37,7 +37,7 @@ float somaSubtrAlternada()
       printf("Digite um número para somar:\t+");
       scanf("%f", &numero);
 
-      if(numero == -2)
+      if(numero == 0)
         break;
 
       soma= sum(numero, soma);
@@ -48,7 +48,7 @@ float somaSubtrAlternada()
       printf("Digite um número para subtrair:\t-");
       scanf("%f", &numero);
 
-      if(numero == -2)
+      if(numero == 0)
         break;
 
       subtracao= subtraction(numero, subtracao);
