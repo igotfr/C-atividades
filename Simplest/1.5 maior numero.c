@@ -17,6 +17,8 @@ void maiorNumero(float n1, float n2)
 {
   if(n1 > n2)
     printf("\nO maior é %.4f", n1);
+  else if(n1 == n2)
+    printf("\nOs números %.4f são iguais", n1);
   else
     printf("\nO maior é %.4f", n2);
 }
