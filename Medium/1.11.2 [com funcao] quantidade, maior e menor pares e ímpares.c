@@ -77,6 +77,8 @@ struct ModeloAtributosNumericos selecaoAtributosNumericos()
   int numero;
 
   struct ModeloAtributosNumericos atributosNumericos= {0, 0, 32767, -1, 32767, -1};
+  
+  printf("Digite vários números para verificação de paridade: (-2 para sair)\n");
 
   // condição de saída da iteração é digitar -2
   while(numero != -2)
@@ -104,6 +106,8 @@ struct ModeloAtributosNumericos selecaoAtributosNumericos()
     }
   }
 
+  printf("\n");
+
   return atributosNumericos;
 }
 
@@ -111,11 +115,7 @@ int main()
 {
   struct ModeloAtributosNumericos receberAtributosNumericos;
 
-  printf("Digite vários números para verificação de paridade: (-2 para sair)\n");
-
   receberAtributosNumericos= selecaoAtributosNumericos();
-  
-  printf("\n");
 
   printf("Pares: %i\n\
           Maior par: %i\n\
