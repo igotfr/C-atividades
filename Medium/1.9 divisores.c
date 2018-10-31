@@ -17,13 +17,18 @@ struct modeloDivisores
   int *divisores, qtdDivisores, somaDivisores;
 };
 
-struct modeloDivisores divisores(int n)
+struct modeloDivisores divisores()
 {
+  int n;
+
   struct modeloDivisores atributosDivisores;
 
   atributosDivisores.divisores= malloc(0);
   atributosDivisores.qtdDivisores= 0;
   atributosDivisores.somaDivisores= 0;
+
+  printf("Digite 1 número para ver seus divisores:");
+  scanf("%d", &n);
 
   for(int i= 1; i<=n/2; i++)
     if(n%i == 0)
@@ -57,12 +62,8 @@ void exibirDivisores(struct modeloDivisores atributosDivisores)
 
 int main()
 {
-  int n;
-  struct modeloDivisores retornoDivisores;
+  struct modeloDivisores retornoDivisores= divisores();
 
-  printf("Digite 1 número para ver seus divisores:");
-  scanf("%d", &n);
-  retornoDivisores= divisores(n);
   exibirDivisores(retornoDivisores);
 
   printf("\n\nSoma dos divisores: %i", retornoDivisores.somaDivisores);
