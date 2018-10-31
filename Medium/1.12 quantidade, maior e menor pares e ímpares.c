@@ -8,6 +8,9 @@ Faça um programa que lê uma sequência de números naturais do teclado (termin
 imprime a quantidade de números pares e ímpares da sequência.
 Imprima também o maior e o menor ímpar e o maior e o menor par encontrados na sequência.
 
+Mesmo problema que o anterior; mas agora o tamanho n da sequência é conhecido previamente.
+Antes de tudo você deve ler n, e depois ler os n números.
+
 **/
 
 #include<stdio.h>
@@ -125,9 +128,9 @@ int main()
   printf("Digite a quantidade de números a serem recebidos:");
   scanf("%i", &qtdNumeros);
 
-  printf("Digite vários números para verificação de paridade: (-2 para sair)\n");
+  printf("\nDigite vários números para verificação de paridade: (-2 para sair)\n");
 
-  receberAtributosNumericos= selecaoAtributosNumericos(conjuntoNumeros);
+  receberAtributosNumericos= selecaoAtributosNumericos(conjuntoNumeros, qtdNumeros);
   
   printf("\n");
 
