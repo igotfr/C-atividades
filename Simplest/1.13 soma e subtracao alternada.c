@@ -2,7 +2,7 @@
 
 Lista 1:
 
-Exercício 12.
+Exercício 13.
 
 Faça um programa que lê do teclado uma sequência de números inteiros não-nulos (terminada por zero) e os soma e subtrai
 alternadamente - por exemplo, para a sequência [5, 7, 1, -4, 9], seu programa deverá calcular 5 - 7 + 1 - (-4) + 9.
@@ -63,7 +63,7 @@ float somaSubtrAlternada()
 
 int main()
 {
-  float resultadoSumSub= somaSubtrAlternada();
+  float resultadoSumSubtr= somaSubtrAlternada();
 
-  printf("Resultado: %.4f", resultadoSumSub);
+  printf("Resultado: %.4f", resultadoSumSubtr);
 }
