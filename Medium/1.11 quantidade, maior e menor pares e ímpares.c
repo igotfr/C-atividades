@@ -119,7 +119,7 @@ int main()
 
   printf("Pares: %i\n\
           Maior par: %i\n\
-          Menor par: %i\n\
+          Menor par: %i\n\n\
           Ímpares: %i\n\
           Maior ímpar: %i\n\
           Menor ímpar: %i",
