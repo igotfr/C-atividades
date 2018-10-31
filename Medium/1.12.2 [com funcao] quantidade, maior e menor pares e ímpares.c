@@ -17,23 +17,17 @@ Antes de tudo você deve ler n, e depois ler os n números.
 
 int contarPares(int numero, int qtdPares)
 {
-  if(numero%2 == 0 && numero != -2)
-    return ++qtdPares;
-  else
-    return qtdPares;
+  return ++qtdPares;
 }
 
 int contarImpares(int numero, int qtdImpares)
 {
-  if(numero%2 != 0 && numero != -2)
-    return ++qtdImpares;
-  else
-    return qtdImpares;
+  return ++qtdImpares;
 }
 
 int maiorPar(int numero, int maiorPar)
 {
-  if(numero%2 == 0 && numero > maiorPar && numero != -2)
+  if(numero > maiorPar)
     return maiorPar= numero;
   else
     return maiorPar;
@@ -41,7 +35,7 @@ int maiorPar(int numero, int maiorPar)
 
 int menorPar(int numero, int menorPar)
 {
-  if(numero%2 == 0 && numero < menorPar && numero != -2)
+  if(numero < menorPar)
     return menorPar= numero;
   else
     return menorPar;
@@ -49,7 +43,7 @@ int menorPar(int numero, int menorPar)
 
 int maiorImpar(int numero, int maiorImpar)
 {
-  if(numero%2 != 0 && numero > maiorImpar && numero != -2)
+  if(numero > maiorImpar)
     return maiorImpar= numero;
   else
     return maiorImpar;
@@ -57,7 +51,7 @@ int maiorImpar(int numero, int maiorImpar)
 
 int menorImpar(int numero, int menorImpar)
 {
-  if(numero%2 != 0 && numero < menorImpar && numero != -2)
+  if(numero < menorImpar)
     return menorImpar= numero;
   else
     return menorImpar;
@@ -81,36 +75,36 @@ struct ModeloAtributosNumericos
   menorImpar, maiorImpar;
 };
 
-struct ModeloAtributosNumericos selecaoAtributosNumericos(int numero, int qtdNumeros)
+struct ModeloAtributosNumericos selecaoAtributosNumericos()
 {
+  int numero, qtdNumeros;
+
   struct ModeloAtributosNumericos atributosNumericos= {0, 0, 32767, -1, 32767, -1};
 
-  // as 2 variáveis abaixo serão usadas mais abaixo para verificar se a contagem de números pares ou ímpares alterou
-  int qtdParesAnterior, qtdImparesAnterior;
+  printf("Digite a quantidade de números a serem recebidos:");
+  scanf("%i", &qtdNumeros);
+
+  printf("\nDigite vários números para verificação de paridade:\n");
 
   // condição de saída da iteração é digitar -2
   for(int i= 0; i<qtdNumeros; i++)
   {
     scanf("%i", &numero);
 
-    qtdParesAnterior= atributosNumericos.qtdPares;
-    qtdImparesAnterior= atributosNumericos.qtdImpares;
-
-    // aqi é feita a contagem dos números pares
-    atributosNumericos.qtdPares= contarPares(numero, atributosNumericos.qtdPares);
-
-    if(atributosNumericos.qtdPares != qtdParesAnterior)
+    if(numero%2 == 0 && numero != -2)
     {
+      // aqi é feita a contagem dos números pares
+      atributosNumericos.qtdPares= contarPares(numero, atributosNumericos.qtdPares);
+
       atributosNumericos.maiorPar= maiorPar(numero, atributosNumericos.maiorPar);
       
       atributosNumericos.menorPar= menorPar(numero, atributosNumericos.menorPar);
     }
-
-    // aqi é feita a contagem dos números ímpares
-    atributosNumericos.qtdImpares= contarImpares(numero,atributosNumericos.qtdImpares);
-
-    if(atributosNumericos.qtdImpares != qtdImparesAnterior)
+    else if(numero != -2)
     {
+      // aqi é feita a contagem dos números ímpares
+      atributosNumericos.qtdImpares= contarImpares(numero,atributosNumericos.qtdImpares);
+
       atributosNumericos.maiorImpar= maiorImpar(numero, atributosNumericos.maiorImpar);
 
       atributosNumericos.menorImpar= menorImpar(numero, atributosNumericos.menorImpar);
@@ -123,20 +117,14 @@ struct ModeloAtributosNumericos selecaoAtributosNumericos(int numero, int qtdNum
 int main()
 {
   int conjuntoNumeros, qtdNumeros;
-  struct ModeloAtributosNumericos receberAtributosNumericos;
 
-  printf("Digite a quantidade de números a serem recebidos:");
-  scanf("%i", &qtdNumeros);
+  struct ModeloAtributosNumericos receberAtributosNumericos= selecaoAtributosNumericos(); ;
 
-  printf("\nDigite vários números para verificação de paridade: (-2 para sair)\n");
-
-  receberAtributosNumericos= selecaoAtributosNumericos(conjuntoNumeros, qtdNumeros);
-  
   printf("\n");
 
   printf("Pares: %i\n\
           Maior par: %i\n\
-          Menor par: %i\n\
+          Menor par: %i\n\n\
           Ímpares: %i\n\
           Maior ímpar: %i\n\
           Menor ímpar: %i",
