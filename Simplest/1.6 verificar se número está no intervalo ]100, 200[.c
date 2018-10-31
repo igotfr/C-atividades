@@ -17,8 +17,12 @@ void intervaloEntre100e200(float n)
 {
   if(n > 100 && n < 200)
     printf("\n%.4f está no intervalo entre 100 e 200", n);
-  else if(n <=100)
+  else if(n < 100)
     printf("\n%.4f é menor ou igual a 100", n);
+  else if(n == 100)
+    printf("\n%.4f é 100", n);
+  else if(n == 200)
+    printf("\n%.4f é 200", n);
   else
     printf("\n%.4f é maior ou igual a 200", n);
 }
