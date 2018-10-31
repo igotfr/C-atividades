@@ -1,0 +1,23 @@
+Mesma que a 13ª da Lista 1
+
+--------------------------------------------------------------------------------------------------------------------------
+
+Lista 1:
+
+Exercício 13.
+
+Faça um programa que lê do teclado uma sequência de números inteiros não-nulos (terminada por zero) e os soma e subtrai
+alternadamente - por exemplo, para a sequência [5, 7, 1, -4, 9], seu programa deverá calcular 5 - 7 + 1 - (-4) + 9.
+
+---------------------------------------------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------------------------------------------
+
+Lista 2:
+
+Exercício 1.
+
+Faça um programa que lê do teclado uma sequência de números inteiros não-nulos (terminada por zero) e os soma e subtrai
+alternadamente - por exemplo, para a sequência [5, 7, 1, -4, 9], seu programa deverá calcular 5 - 7 + 1 - (-4) + 9.
+
+---------------------------------------------------------------------------------------------------------------------------
