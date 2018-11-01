@@ -1,3 +1,15 @@
+/**
+
+Lista 1:
+
+Exercício 2.
+
+Num frigorífico existem 90 bois. Cada boi traz preso em seu pescoço um cartão contendo seu número de identificação e seu peso.
+Fazer um algoritmo que escreva o número e peso do boi mais gordo e do boi mais magro.
+Se houver dois ou mais bois com o mesmo peso, maior que todos os demais, o seu algoritmo escreverá o número de qual deles?
+
+**/
+
 #include<stdio.h>
 #include<stdlib.h>
 
