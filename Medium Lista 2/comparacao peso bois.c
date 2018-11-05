@@ -116,6 +116,8 @@ int main()
   for(int i= 0; i<propBois.freqMaiorPeso; i++)
     printf("ID: %i Nome: %s\n", propBois.idsMaioresPesos[i], bid[propBois.idsMaioresPesos[i]].nome);
 
+  printf("\n\n\n-------------------------------------\n\n\n");
+
   printf("\n\nMenor peso entre os bois: %.4f\n\n\
   Bois com esse peso: %i\n\n", propBois.menorPeso, propBois.freqMenorPeso);
 
