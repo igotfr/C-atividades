@@ -52,11 +52,7 @@ void dadosHabitantes()
     qtdOcorrencias= fqtdOcorrencias(qtdOcorrencias,idade,sexo,cordosOlhos,cordosCabelos);
   }
 
-  printf("Maior idade: %i\n", maiorIdade);
-
-  printf("qtd mulheres: %i\n", qtdMulheres);
-
-  printf("qtd ocorrencias: %i\n", qtdOcorrencias);
+  printf("Maior idade entre todos os habitantes: %i\n\n", maiorIdade);
 
   printf("Porcentagem entre as mulheres que possuem de 18 a 35 anos e que tenham olhos verdes e cabelos louros: %.4f", (float) qtdOcorrencias*100 /qtdMulheres);
 }
