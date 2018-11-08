@@ -33,7 +33,8 @@ void dadosdePessoas()
       qtdHomens++;
   }
 
-  printf("Maior altura: %.4f\nMenor altura: %.4f\nMedia de altura das mulheres: %.4f", maiorAltura, menorAltura, somaAlturaMulheres/qtdMulheres);
+  printf("Maior altura: %.4f\nMenor altura: %.4f\nMedia de altura das mulheres: %.4f\nQuantidade de homens: %i",
+         maiorAltura, menorAltura, somaAlturaMulheres/qtdMulheres,qtdHomens);
 
   free(sexo);
 }
