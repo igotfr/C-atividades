@@ -5,7 +5,8 @@
 int mercadorias()
 {
 	char *nomeMercadoria= malloc(0);
-	int lucroPercentual, qtdMercadoriascomMenos10porcentoLucro= 0, qtdMercadoriascomLucroentre10e20= 0, qtdMercadoriascomMais20porcentoLucro= 0;
+	int lucroPercentual, qtdMercadoriascomMenos10porcentoLucro= 0, qtdMercadoriascomLucroentre10e20= 0,
+	qtdMercadoriascomMais20porcentoLucro= 0;
 	float precoCompra, precoVenda, totalCompra= 0, totalVenda= 0, lucroTotal= 0;
 
 	for(int i= 0;; i++)
