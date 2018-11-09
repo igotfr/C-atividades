@@ -5,7 +5,8 @@
 void pesquisa()
 {
 	char *sexo= malloc(0), *resposta= malloc(0);
-	int qtdPessoas= 0, qtdPessoasRespostaSim= 0, qtdPessoasRespostaNao= 0, qtdMulheresRespostaSim= 0, qtdHomensRespostaNao= 0;
+	int qtdPessoas= 0, qtdPessoasRespostaSim= 0, qtdPessoasRespostaNao= 0,
+	qtdMulheresRespostaSim= 0, qtdHomensRespostaNao= 0;
 	float porcentagemMulheresRespostaSim, porcentagemHomensRespostaNao;
 
 	printf("Entrevistados:\n\n");
@@ -38,7 +39,7 @@ void pesquisa()
 		}
 	}
 
-	// estou assumindo a porcentagem total como todas as pessoas, não todas as mulheres
+	// estou assumindo a porcentagem total como todas as pessoas, não todas as mulheres ou todos os homens
 	porcentagemMulheresRespostaSim= (float) qtdMulheresRespostaSim/qtdPessoas *100;
 	porcentagemHomensRespostaNao= (float) qtdHomensRespostaNao/qtdPessoas *100;
 
