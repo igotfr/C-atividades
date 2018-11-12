@@ -31,6 +31,8 @@ void mortalidadeInfantil()
     if( mesesdeVida<=24 )
       qtdCriancasMenos24Meses++;
   }
+
+  // APRESENTAÇÃO DE RESULTADOS
   printf("\n\nPorcentagem de crianças mortas no período: %.4f\n", (float) qtdCriancasMortas/qtdCriancasNascidas *100);
 
   // porcentagem total assumida como todas as crianças nascidas, não todas as crianças mortas
