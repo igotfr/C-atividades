@@ -2,7 +2,7 @@
 #include<stdlib.h>
 #include<string.h>
 
-void funcao()
+void mortalidadeInfantil()
 {
   int qtdCriancasNascidas, qtdCriancasMortas= 0, qtdMachosMortos= 0, qtdCriancasMenos24Meses= 0, mesesdeVida;
   char *sexoCriancaMorta= malloc(9);
@@ -45,7 +45,7 @@ void funcao()
 
 int main()
 {
-  funcao();
+  mortalidadeInfantil();
 
   return 0;
 }
